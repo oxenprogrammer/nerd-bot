@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
-gem 'slack-ruby-bot-server-events'
 gem 'celluloid-io'
+gem 'slack-ruby-bot-server-events'
+
+gem 'rspec'
+gem 'simplecov', require: false, group: :test
