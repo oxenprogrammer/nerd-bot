@@ -1,0 +1,133 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.1.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    async (1.28.5)
+      console (~> 1.10)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    builder (3.2.4)
+    celluloid (0.18.0)
+      timers (~> 4)
+    celluloid-io (0.17.3)
+      celluloid (>= 0.17.2)
+      nio4r (>= 1.1)
+      timers (>= 4.1.1)
+    concurrent-ruby (1.1.8)
+    console (1.10.1)
+      fiber-local
+    declarative (0.0.20)
+    declarative-option (0.1.0)
+    dry-configurable (0.12.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5.0)
+    dry-container (0.7.2)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-core (0.5.0)
+      concurrent-ruby (~> 1.0)
+    dry-inflector (0.2.0)
+    dry-logic (1.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-types (1.5.0)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
+    faraday (1.3.0)
+      faraday-net_http (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords
+    faraday-net_http (1.0.1)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
+    fiber-local (1.0.0)
+    foreman (0.87.2)
+    gli (2.19.2)
+    grape (1.5.1)
+      activesupport
+      builder
+      dry-types (>= 1.1)
+      mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
+    grape-roar (0.4.1)
+      grape
+      multi_json
+      roar (~> 1.1.0)
+    grape-swagger (1.3.1)
+      grape (~> 1.3)
+    hashie (4.1.0)
+    i18n (1.8.7)
+      concurrent-ruby (~> 1.0)
+    kaminari-core (1.2.1)
+    kaminari-grape (1.0.1)
+      grape
+      kaminari-core (~> 1.0)
+    minitest (5.14.3)
+    multi_json (1.15.0)
+    multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.0.1)
+      mustermann (>= 1.0.0)
+    nio4r (2.5.4)
+    rack (2.2.3)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
+    rack-rewrite (1.5.1)
+    rack-server-pages (0.1.0)
+      rack
+    representable (3.0.4)
+      declarative (< 0.1.0)
+      declarative-option (< 0.2.0)
+      uber (< 0.2.0)
+    roar (1.1.0)
+      representable (~> 3.0.0)
+    ruby2_keywords (0.0.4)
+    slack-ruby-bot-server (1.2.0)
+      async
+      foreman
+      grape
+      grape-roar (>= 0.4.0)
+      grape-swagger
+      kaminari-grape
+      rack-cors
+      rack-rewrite
+      rack-server-pages
+      slack-ruby-client
+    slack-ruby-bot-server-events (0.3.0)
+      slack-ruby-bot-server (>= 1.2.0)
+    slack-ruby-client (0.16.0)
+      faraday (>= 1.0)
+      faraday_middleware
+      gli
+      hashie
+      websocket-driver
+    timers (4.3.2)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    uber (0.1.0)
+    websocket-driver (0.7.3)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+    zeitwerk (2.4.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  celluloid-io
+  slack-ruby-bot-server-events
+
+BUNDLED WITH
+   2.2.5
