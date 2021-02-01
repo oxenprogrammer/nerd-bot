@@ -13,4 +13,7 @@ gem 'rspec'
 gem 'rubocop-rspec', require: false
 gem 'simplecov', require: false, group: :test
 gem 'slack-ruby-client'
+gem 'thin'
+gem 'foreman'
+
 
