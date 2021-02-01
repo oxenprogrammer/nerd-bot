@@ -5,4 +5,4 @@ Dotenv.load
 
 require_relative './bin/bot'
 
-JokerTheNerd::SlackBot.run
+Joker::Slack.run

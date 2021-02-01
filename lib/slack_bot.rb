@@ -1,5 +1,7 @@
-module JokerTheNerd
-  class SlackBot < SlackRubyBot::Bot
+require 'slack-ruby-bot'
+
+module Joker
+  class Slack < SlackRubyBot::Bot
     help do
       title 'Joker The Nerd Bot'
       desc 'This bot serves you with some programming humors'

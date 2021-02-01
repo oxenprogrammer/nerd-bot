@@ -1,8 +1,8 @@
-#!/usr/bin/env ruby
+require 'slack-ruby-bot'
 require 'httparty'
 require 'nokogiri'
 
-module JokerTheNerd
+module Joker
   module Commands
     # Slack bot commands
     class Jokes < SlackRubyBot::Commands::Base
