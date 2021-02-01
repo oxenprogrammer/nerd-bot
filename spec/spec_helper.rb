@@ -102,4 +102,3 @@ RSpec.configure do |config|
 end
 
 require 'slack-ruby-bot/rspec'
-
