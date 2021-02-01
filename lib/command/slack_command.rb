@@ -40,7 +40,8 @@ module JokerTheNerd
       unparsed_page = HTTParty.get(@base_url)
       @parsed_page = Nokogiri::HTML(unparsed_page.body)
       imgs = @parsed_page.css('figure.entry-image img[src]').select { |image| image['src'].start_with?('https') }
-      imgs.sample
+      images_urls = imgs.map { |t| t[:src] } 
+      images_urls.sample
     end
   end
 end

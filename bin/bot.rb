@@ -19,7 +19,8 @@ class Web
 
   def images
     imgs = @parsed_page.css('figure.entry-image img[src]').select { |image| image['src'].start_with?('https') }
-    puts imgs.sample
+    images_urls = imgs.map { |t| t[:src] } 
+    puts images_urls
   end
 
   def text_jokes
