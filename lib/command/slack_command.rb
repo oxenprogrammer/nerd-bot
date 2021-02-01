@@ -5,11 +5,11 @@ module JokerTheNerd
   module Commands
     class Jokes < SlackRubyBot::Commands::Base
       command 'jokes_image' do |client, data, _match|
-        client.say(channel: data.channel, text: JokesImage.image_jokes)
+        client.say(channel: data.channel, text: JokesImage.image_random_joke)
       end
 
       command 'jokes_text' do |client, data, _match|
-        client.say(channel: data.channel, text: JokesText.text_jokes)
+        client.say(channel: data.channel, text: JokesText.text_random_joke)
       end
 
       command 'say_hello' do |client, data, _match|
@@ -20,7 +20,7 @@ module JokerTheNerd
 
   class HelloText
     def self.say_hello
-      'Hello, Joker the Nerd Here'
+      'Heyyy, ready for some humors?'
     end
   end
 
@@ -29,8 +29,11 @@ module JokerTheNerd
       @text_url = 'https://upjoke.com/programmer-jokes'
       unparsed_page_text = HTTParty.get(@text_url)
       @parsed_page_text = Nokogiri::HTML(unparsed_page_text.body)
-      my_jokes = @parsed_page_text.css('.joke-wrapper').map(&:text)
-      my_jokes.sample
+      @parsed_page_text.css('.joke-wrapper').map(&:text)
+    end
+
+    def self.text_random_joke
+      text_jokes.sample
     end
   end
 
@@ -40,8 +43,11 @@ module JokerTheNerd
       unparsed_page = HTTParty.get(@base_url)
       @parsed_page = Nokogiri::HTML(unparsed_page.body)
       imgs = @parsed_page.css('figure.entry-image img[src]').select { |image| image['src'].start_with?('https') }
-      images_urls = imgs.map { |t| t[:src] } 
-      images_urls.sample
+      imgs.map { |t| t[:src] }
+    end
+
+    def self.image_random_joke
+      image_jokes.sample
     end
   end
 end
