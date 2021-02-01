@@ -1,3 +1,6 @@
+require 'httparty'
+require 'nokogiri'
+
 # Say hello class implementation
 class Hello
   def self.say_hello
