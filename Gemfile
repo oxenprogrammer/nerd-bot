@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.6.0'
 gem 'celluloid-io'
 gem 'slack-ruby-bot'
 
@@ -9,10 +10,11 @@ gem 'httparty'
 gem 'nokogiri'
 gem 'puma'
 gem 'rack'
+gem 'rack-test'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop-rspec', require: false
 gem 'simplecov', require: false, group: :test
 gem 'slack-ruby-client'
 gem 'thin'
-gem 'rack-test'
+
