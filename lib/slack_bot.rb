@@ -1,6 +1,7 @@
 require 'slack-ruby-bot'
 
 module Joker
+  # Displays commands help
   class Slack < SlackRubyBot::Bot
     help do
       title 'Joker The Nerd Bot'
