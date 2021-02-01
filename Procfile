@@ -1,2 +1,1 @@
-dev: bundle exec rackup
-web: bundle exec rackup -p 9292
+rake: bundle exec rake
