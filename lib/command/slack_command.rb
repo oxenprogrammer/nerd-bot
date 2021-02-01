@@ -1,8 +1,10 @@
+#!/usr/bin/env ruby
 require 'httparty'
 require 'nokogiri'
 
 module JokerTheNerd
   module Commands
+    # Slack bot commands
     class Jokes < SlackRubyBot::Commands::Base
       command 'jokes_image' do |client, data, _match|
         client.say(channel: data.channel, text: JokesImage.image_random_joke)
@@ -18,12 +20,14 @@ module JokerTheNerd
     end
   end
 
+  # Say hello class implementation
   class HelloText
     def self.say_hello
       'Heyyy, ready for some humors?'
     end
   end
 
+  # Text based jokes implementation
   class JokesText
     def self.text_jokes
       @text_url = 'https://upjoke.com/programmer-jokes'
@@ -37,6 +41,7 @@ module JokerTheNerd
     end
   end
 
+  # Image based jokes implentation
   class JokesImage
     def self.image_jokes
       @base_url = 'https://www.hongkiat.com/blog/programming-jokes/'

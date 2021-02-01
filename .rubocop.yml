@@ -1,2 +1,6 @@
 Style/FrozenStringLiteralComment:
   Enable: false
+Style/FrozenStringLiteralComment:
+  Enable: false
+Naming/FileName:
+  Enable: false
