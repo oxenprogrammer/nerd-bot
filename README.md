@@ -5,6 +5,9 @@
 we developers/programmers get tired writing code and since https://www.slack.com is where most of our interaction occurs, it's not uncommon to just chat with a bot cracking jokes as your teammates might still be busy, nice right?
 Nerd-bot scraps the web and returns you random jokes in form of images or text given the right commands in slack.
 
+## Screenshot
+![screenshot](./nerd-bot.png)
+
 ## Built With
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Gems](https://rubygems.org/)
