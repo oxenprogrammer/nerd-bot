@@ -2,7 +2,7 @@ require 'httparty'
 require 'nokogiri'
 
 # Image based jokes implementation
-class Image
+class ImageClone
   def initialize
     @base_url = 'https://www.hongkiat.com/blog/programming-jokes/'
     unparsed_page = HTTParty.get(@base_url)

@@ -10,8 +10,8 @@ module Joker
   module Commands
     # Slack bot commands
     class Jokes < SlackRubyBot::Commands::Base
-      image_joke = Image.new
-      text_joke = Text.new
+      image_joke = ImageClone.new
+      text_joke = TextClone.new
       command 'jokes_image' do |client, data, _match|
         client.say(channel: data.channel, text: image_joke.image_random_joke)
       end

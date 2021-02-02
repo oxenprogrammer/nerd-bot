@@ -2,7 +2,7 @@ require 'httparty'
 require 'nokogiri'
 
 # Text based jokes implementation
-class Text
+class TextClone
   def initialize
     @text_url = 'https://upjoke.com/programmer-jokes'
     unparsed_page_text = HTTParty.get(@text_url)
