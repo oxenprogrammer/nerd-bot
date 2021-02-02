@@ -23,4 +23,3 @@ class TextClone
 
   private :text_jokes
 end
-
