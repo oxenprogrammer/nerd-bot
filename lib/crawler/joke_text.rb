@@ -30,7 +30,3 @@ class Text
   private :text_jokes
 end
 
-text = Text.new
-
-# puts text_jokes.is_a? Array
-puts text.text_random_joke
