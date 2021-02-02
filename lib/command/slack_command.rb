@@ -4,6 +4,7 @@ require 'nokogiri'
 
 require_relative './../crawler/joke_text'
 require_relative './../crawler/joke_image'
+require_relative './../crawler/hello'
 
 module Joker
   module Commands
