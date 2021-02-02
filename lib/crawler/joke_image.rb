@@ -27,5 +27,3 @@ class ImageClone
   private :image_jokes
 end
 
-image_clone = ImageClone.new
-puts image_clone.image_random_joke

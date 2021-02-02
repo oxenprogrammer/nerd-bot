@@ -1,10 +1,13 @@
 require_relative './../lib/crawler/joke_image'
+require_relative './../lib/crawler/image_scraper'
+
 my_image = ImageClone.new
+my_scraper = ImageScraper.new
 
 describe ImageClone do
   describe '#image_jokes' do
     it 'should return a string array' do
-      jokes = my_image.send(:image_jokes)
+      jokes = my_image.send(:image_jokes, my_scraper.scraper)
       expect(jokes).to be_an(Array)
     end
   end
