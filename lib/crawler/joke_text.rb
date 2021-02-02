@@ -1,6 +1,3 @@
-require 'httparty'
-require 'nokogiri'
-
 require_relative './text_scraper'
 
 # Text based jokes implementation

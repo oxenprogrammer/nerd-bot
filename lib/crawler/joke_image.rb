@@ -1,6 +1,3 @@
-require 'httparty'
-require 'nokogiri'
-
 require_relative './image_scraper'
 
 # Image based jokes implementation
@@ -26,4 +23,3 @@ class ImageClone
 
   private :image_jokes
 end
-

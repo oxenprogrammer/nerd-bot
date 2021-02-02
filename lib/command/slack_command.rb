@@ -1,6 +1,4 @@
 require 'slack-ruby-bot'
-require 'httparty'
-require 'nokogiri'
 
 require_relative './../crawler/joke_text'
 require_relative './../crawler/joke_image'

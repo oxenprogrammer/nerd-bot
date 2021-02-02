@@ -1,3 +1,6 @@
+require 'httparty'
+require 'nokogiri'
+
 # Text Scraper
 class TextScraper
   def initialize
