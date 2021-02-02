@@ -1,17 +1,13 @@
 require 'httparty'
 require 'nokogiri'
 
+require_relative './text_scraper'
+
 # Text based jokes implementation
 class TextClone
-  def initialize
-    @text_url = 'https://upjoke.com/programmer-jokes'
-    unparsed_page_text = HTTParty.get(@text_url)
-    @parsed_page_text = Nokogiri::HTML(unparsed_page_text.body)
-  end
-
-  def text_jokes
+  def text_jokes(scrap)
     my_array = []
-    my_text_jokes = @parsed_page_text.css('.joke-wrapper').map(&:text)
+    my_text_jokes = scrap.css('.joke-wrapper').map(&:text)
     if my_text_jokes.is_a? Array
       my_text_jokes
     else
@@ -20,8 +16,9 @@ class TextClone
   end
 
   def text_random_joke
-    if text_jokes.any?
-      text_jokes.sample
+    my_jokes = TextScraper.new
+    if text_jokes(my_jokes.scraper).any?
+      text_jokes(my_jokes.scraper).sample
     else
       'Whoops, something is not quite right!, try again'
     end
