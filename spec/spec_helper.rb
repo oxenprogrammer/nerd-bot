@@ -100,3 +100,5 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require 'slack-ruby-bot/rspec'

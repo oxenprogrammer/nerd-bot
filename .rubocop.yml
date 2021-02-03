@@ -1,0 +1,10 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Style/BlockComments:
+  Enabled: false
