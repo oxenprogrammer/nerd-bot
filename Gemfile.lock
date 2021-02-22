@@ -141,5 +141,8 @@ DEPENDENCIES
   slack-ruby-bot
   slack-ruby-client
 
+RUBY VERSION
+   ruby 3.0.0p0
+
 BUNDLED WITH
-   2.2.3
+   2.2.10
