@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+ruby '3.0.0'
+
 gem 'celluloid-io'
 gem 'slack-ruby-bot'
 
@@ -15,3 +18,4 @@ gem 'rspec'
 gem 'rubocop-rspec', require: false
 gem 'simplecov', require: false, group: :test
 gem 'slack-ruby-client'
+
